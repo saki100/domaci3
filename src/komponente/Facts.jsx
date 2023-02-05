@@ -1,9 +1,14 @@
 import React from 'react'
+import FactCard from './FactCard'
 
-function Facts() {
+function Facts({facts}) {
   return (
     <div>
-      
+      {
+        facts.map(fact => (
+            <FactCard key={fact.id} fact={fact} />
+        ))
+      }
     </div>
   )
 }

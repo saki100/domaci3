@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Facts from './komponente/Facts';
-import { useState } from 'react';
 import FactInfo from './komponente/FactInfo';
+import axios from 'axios';
+import { useState,useEffect } from 'react';
 
 function App() {
 
@@ -20,7 +21,6 @@ function App() {
   return(
     <div>
       <Router>
-      <NavBar/>
         <Routes>
           <Route path="/" element={<Facts  facts={facts} setOneFact={setOneFact}/>} />
           <Route path="/info" element={<FactInfo oneFact={oneFact}/>}/>
