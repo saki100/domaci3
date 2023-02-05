@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FactCard({fact}) {
+function FactCard({fact,prikaziDetalje}) {
   return (
     <div class="card">
         <div class="card-header">
@@ -9,7 +9,7 @@ function FactCard({fact}) {
         </div>
         <div class="card-body">
             <p class="card-text"><b>{fact.fact}</b></p>
-            <button className="btn btn-primary btn-sm">Detaljnije</button>
+            <button className="btn btn-primary btn-sm" onClick={()=>prikaziDetalje(fact)} >Detaljnije</button>
         </div>
     </div>
   )

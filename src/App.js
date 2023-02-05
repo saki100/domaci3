@@ -22,7 +22,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Facts  facts={facts} setOneFact={setOneFact}/>} />
+          <Route exact path="/" element={<Facts  facts={facts} setOneFact={setOneFact}/>} />
           <Route path="/info" element={<FactInfo oneFact={oneFact}/>}/>
         </Routes>
       </Router >
