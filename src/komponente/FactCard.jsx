@@ -9,7 +9,7 @@ function FactCard({fact,prikaziDetalje}) {
         </div>
         <div class="card-body">
             <p class="card-text"><b>{fact.fact}</b></p>
-            <button className="btn btn-primary btn-sm" onClick={()=>prikaziDetalje(fact)} >Detaljnije</button>
+            <button className="btn btn-primary btn-sm" onClick={()=>prikaziDetalje(fact)}>Detaljnije</button>
         </div>
     </div>
   )

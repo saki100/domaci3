@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Facts from './komponente/Facts';
@@ -9,7 +8,7 @@ import { useState,useEffect } from 'react';
 function App() {
 
   const [facts, setFacts] = useState([]);
-  const[oneFact, setOneFact]=useState(facts[0])
+  const [oneFact, setOneFact]=useState(facts[0])
 
     useEffect(() => {
         axios.get('https://catfact.ninja/facts?limit=50').then(res => {
