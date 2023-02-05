@@ -4,6 +4,7 @@ import Facts from './komponente/Facts';
 import FactInfo from './komponente/FactInfo';
 import axios from 'axios';
 import { useState,useEffect } from 'react';
+import Footer from './komponente/Footer';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/" element={<Facts  facts={facts} setOneFact={setOneFact}/>} />
           <Route path="/info" element={<FactInfo oneFact={oneFact}/>}/>
         </Routes>
+        <Footer/>
       </Router >
     </div>
   );
