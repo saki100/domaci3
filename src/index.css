@@ -46,3 +46,21 @@ code {
 .pretraga{
   color: blue;
 }
+
+.beerdCard{
+  display: flex;
+  margin: 15px;
+  border:2px salmon solid;
+  padding: 5px;
+  background-color: aquamarine;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.btnIstrazi{
+  background-color: blueviolet;
+  padding: 10px;
+  border: 3px brown solid;
+  font-size: medium;
+}

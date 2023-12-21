@@ -5,6 +5,8 @@ import FactInfo from './komponente/FactInfo';
 import axios from 'axios';
 import { useState,useEffect } from 'react';
 import Footer from './komponente/Footer';
+import NavBar from './komponente/NavBar';
+import CatsBreeds from './komponente/CatsBreeds';
 
 function App() {
 
@@ -33,7 +35,9 @@ function App() {
   return(
     <div>
       <Router>
+        <NavBar/>
         <Routes>
+          <Route path="/breeds" element={<CatsBreeds/>}/>
           <Route exact path="/" element={<Facts  facts={showFacts} setOneFact={setOneFact}  pretrazi={pretrazi}/>} />
           <Route path="/info" element={<FactInfo oneFact={oneFact}/>}/>
         </Routes>
