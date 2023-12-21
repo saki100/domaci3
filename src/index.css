@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://www.sd.rs/sites/default/files/styles/full_article_image/public/363/pesak.jpg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card-img-top{
+  height: 50px;
+  width: 50px;
+}
+
+.card{
+  margin: 25px;
+}
+
+.footer-slika {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.footer-text2 {
+  display: block;
+  margin-left: 650px;
+  color: beige;
+  
+}
+
+.pretraga{
+  color: blue;
+}
+
+.beerdCard{
+  display: flex;
+  margin: 15px;
+  border:2px salmon solid;
+  padding: 5px;
+  background-color: aquamarine;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.btnIstrazi{
+  background-color: blueviolet;
+  padding: 10px;
+  border: 3px brown solid;
+  font-size: medium;
+}
