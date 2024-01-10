@@ -5,13 +5,13 @@ import FactInfo from './komponente/FactInfo';
 import axios from 'axios';
 import { useState,useEffect } from 'react';
 import Footer from './komponente/Footer';
-import NavBar from './komponente/NavBar';
 import CatsBreeds from './komponente/CatsBreeds';
+import NavBar from './komponente/NavBar';
 
 function App() {
 
     const [facts, setFacts] = useState([]);
-   
+    
     useEffect(() => {
         axios.get('https://catfact.ninja/facts?limit=50').then(res => {
             console.log(JSON.stringify(res));
