@@ -12,7 +12,6 @@ function App() {
 
     const [facts, setFacts] = useState([]);
     
-   // https://travel-info-api.p.rapidapi.com/find-embassy
     useEffect(() => {
         axios.get('https://catfact.ninja/facts?limit=50').then(res => {
             console.log(JSON.stringify(res));

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FactInfo component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="card text-center"
+  >
+    <div
+      class="card-header"
+    >
+      <img
+        alt="cat"
+        class="card-img-top"
+        src="https://static.vecteezy.com/system/resources/previews/009/665/304/original/cute-kitty-cat-head-cartoon-element-free-png.png"
+      />
+      Sve činjenice preuzete su pomoću javnog API-ja
+    </div>
+    <div
+      class="card-body"
+    >
+      <h5
+        class="card-title"
+      >
+        Fact Info
+      </h5>
+      <p
+        class="card-text"
+      >
+        This is a test fact.
+      </p>
+      <p
+        class="card-text"
+      >
+        Broj karaktera: 20
+      </p>
+      <a
+        href="/"
+      >
+        <button
+          class="btn btn-primary"
+        >
+          Nazad
+        </button>
+      </a>
+    </div>
+    <div
+      class="card-footer text-muted"
+    >
+      <a
+        href="https://catfact.ninja/#/Facts/getFacts"
+      >
+        Link ka API dokumentaciji
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

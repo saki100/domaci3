@@ -15,7 +15,15 @@ function Facts({facts, setOneFact,pretrazi}) {
 
   return (
     <div>
-      <Pretraga pretrazi={pretrazi}/>
+        {/* <Pretraga pretrazi={pretrazi}/>  */}
+        <div className="pretraga">
+        {/* <h3>Pretraži činjenice</h3> */}
+      <form className="d-flex">
+        <input className="form-control me-2" type="search"
+         placeholder="Pronadji cinjenicu"
+          onInput={pretrazi} />
+      </form>
+      </div>
       {
         facts.map(fact => (
             <FactCard key={fact.id} fact={fact} prikaziDetalje={prikaziDetalje} />
